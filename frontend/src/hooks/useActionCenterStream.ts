@@ -27,7 +27,7 @@ export function useActionCenterStream(studentId: string | null): void {
         queryClient.setQueryData(key, snapshot);
         setStreamStatus("live");
       } catch {
-        
+        // TODO: handle parsing error later
       }
     });
 
